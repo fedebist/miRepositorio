@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- Forma interna CSS x etiqueta style -->
+    <style>
+        section { 
+            color: red; 
+        }
+        section article {
+            color: blue; /* hasta no especificar color de article, este heredará red por ser hijo de section */
+        }
+
+        section article h2 {
+            color: green; 
+            background-color: hotpink; 
+        }
+        /* Igual es mala práctica este método */
+    </style> 
+    <!-- CSS externo, forma correcta -->
+<link rel='stylesheet' href='./css/style.css'> <!-- seleccionar archivo css (ruta) -->
+</head>
+
+<body>
+    
+<section> 
+    Hola<!-- etiqueta padre -->
+<article>Chau</article> <!-- etiqueta hijo -->
+<h2>Loren</h2>
+<p>Loren ipsun wtf</p> <!-- Article es hijo de section, h2 y p hijos de article -->
+</article>
+
+</section>
+
+<hr>
+<div id='noticias' class='otra-clase'> <!-- un id unico por doc -->
+    <article>
+        <p>Loren ipsun dolar sit amet.</p>
+    </article>
+</div>
+
+
+<div> <!-- todas las etiquetas soportan atributo class -->
+<H3 class='tituloPrincipal' fuente-grande>H3 para definir estilo desde CSS externo</H3>
+
+</div>
+<div>
+
+   <h4 class='tituloPrincipal'>Estos son mis productos</h4> 
+   <p>Bla bla bla bla bla bla bla bla bla bla</p>
+</div>
+
+<br><br><hr>
+
+<main id=''destacado'' class='titular' style> <!-- mala práctica estilo inline (style='color') -->
+    <p>River hoy juega contra Vélez por el torneo local</p>
+</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* sintaxis CSS */
+.tituloPrincipal {
+    background-color: orange; 
+    color: violet; 
+}
+
+.fuente-grande {
+    font-size: 36px 
+}
+#noticias {
+    background-color: red;
+}
+
+main{
+    color: tomato;
+}
+
+
+#️destacado {
+    color: hotpink;
+}
+.titular {
+    color: grey; !important /* mala práctica, lo hace pesar más manualmente */
+}

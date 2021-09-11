@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.flex-container { /* contenedor padre, aplicar display flex */
+    padding: 10px;
+    background-color: blueviolet;
+    display: flex; 
+    flex-direction: row; /* valor por defecto de flex es row (FILA) */
+    flex-wrap: wrap; /* achicar cajitas si se minimiza pestaña */
+    justify-content: space-evenly;  
+    align-items: center; /* flex-start por defecto */
+    
+
+} /* row-reverse se ordena contenido 3 2 1, al revés, lo mismo column-reverse */
+/*  flex-flow: row nowrap */
+
+.flex-box {
+    width: 380px;
+    height: 50px;
+    background-color: aquamarine;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+

@@ -1,0 +1,9 @@
+/* grids */
+.gridContainer {
+    background-color: aquamarine;
+    display: grid;
+  grid-template-columns: 1fr 2fr; /* 100px; */
+  grid-template-rows:  100px;
+  gap: 10px 50px; /* primero fila, 2do columna */
+  grid-template-columns: repeat(6, 1fr); /* primer valor cant columnas, segundo fracción */
+}

@@ -1,0 +1,81 @@
+* {
+margin: 0;
+padding: 0;
+}
+h1 {
+    color: aquamarine;
+}
+#id-ejemplo {
+    color: blue;
+}
+.class-ejemplo{
+    color: red;
+}
+
+#id.ejemplo .texto{
+color: blueviolet;
+}
+
+.class-ejemplo .texto{
+    color:chocolate;
+} /* como son hijas hay que hacer ejemplo espacio .texto */
+
+#producto{
+    width: 100%;
+}
+
+#productos .producto-titulo{                /* para estilar  */
+color: brown;
+}
+
+#productos .producto-texto {
+    color: seagreen;
+}
+
+#productos .producto-img{
+    color: burlywood;
+}
+
+.header__logo { /* ya sé donde estoy trabajando */
+
+}
+
+header {
+background-color: chartreuse;
+}
+
+ul.lista { /* Distintos valores para listas */
+    list-style-type: none;
+    list-style: url(enlace absolutos o relativo ./img) /* ../salgo de la carpeta */
+}
+
+p.texto { /* etiqueta <p> clase 'texto' */
+font-family: Arial, Helvetica, sans-serif; /* carga arial y helvetica por si quien entre al sitio no tiene cargado arial, carga helvetica */
+font-size: 54px;
+font-weight: bold;
+font-style: normal;
+text-align: right; /* alineación texto */
+}
+
+
+/* RESET */
+
+
+div.bg-image{ /* si fuera un hijo es div. bg-image */
+background-color: magenta;
+height: 300px;
+background-image: url(../imagen-dw.jpg); /* busco aca mi ig */
+background-size: contain; /* tamaño de fondo: auto: tamaño real, cover: estila para que ocupe todo el contenedor, contain hace entrar img completa en el contenedor  */
+background-repeat: ; /* no-repeat, no lo repite */
+background-position: top center; /* center center, top left, arriba a la izq, top right arriba a la derecha */
+}
+
+html{ /* se me pueden cambiar rem en base al font size de acá */
+    font-size: 
+}
+
+
+section p{
+    background-color: greenyellow;
+    font-size: 1em; /* rem atado a etiqueta raíz del doc (html o root) em: atado al primer valor del contenedor */
+}

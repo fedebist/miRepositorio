@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+ 
+ <form action=''enviar.php'' method=''GET''> <!-- como viaja la info -->
+
+ <fieldset>
+     <legend>Formulario de contacto</legend> <!-- Lo encierra en un cuadrado -->
+
+
+<label for='nombre'>Nombre</label>
+    <input type='text' id='nombre'> <!-- tipo text -->
+    <br><br>
+<label for='Apellido'>Apellido</label>
+<input type='apellido' id='apellido'>
+<br><br>
+    <label for='email'>Email</label>
+<input type='email' id='email' required> <!-- tipo email -->
+<br><br>
+<label for='pass'>Contraseña</label>
+<input type='password' name='' id='pass' <!-- tipo contraseña -->
+<br><br>
+
+<input type='radio' name='sexo'>Hombre <input type='radio' name="sexo" id="mujer"> Mujer
+<br><br>
+
+<input type='checkbox' name='acepta' id='acepta' required> Acepta los términos
+<br><br>
+
+<label for='paises'>País</label>
+<select name='id'>
+<option value='arg'>Argentina</option>
+<option value='chi'>Chile</option> <!-- Elegir país -->
+
+
+</select>
+
+<br><br>
+<input type='submit' value= 'Enviar ahora'>
+<input type='reset' value='Limpiar'>
+<input type='file' <!-- VER -->
+
+
+
+</fieldset>   
+
+</form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
